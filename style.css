@@ -44,37 +44,4 @@ footer {
   font-size: 0.9em;
 }
 
-/* Snap scrolling container */
-.scroll-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
 
-/* Each section snaps into view */
-.snap-section {
-  scroll-snap-align: start;
-  height: 100vh;
-  padding: 2rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: background 0.5s ease;
-}
-
-/* Fade-in animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-html {
-  scroll-behavior: smooth;
-}
