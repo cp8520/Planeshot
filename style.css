@@ -1,5 +1,8 @@
-  body.custom-theme h1 {
-  color: #ff6600;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #111;
+  color: #eee;
 }
 
 header {
