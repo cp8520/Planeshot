@@ -7,30 +7,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="carousel">
-    <div class="carousel-track">
-      <div class="carousel-item">
-        <video controls>
-          <source> src=<iframe width="894" height="503" src="https://www.youtube.com/embed/w5pHiqktdvA" title="Finding Historical Records on FamilySearch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </video>Your browser does not support the video tag.
-        </source>
-      </div>
-      <div class="carousel-item">
-        <video controls>
-          <source src="video2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="carousel-item">
-        <video controls>
-          <source src="video3.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-    <button class="carousel-button prev">❮</button>
-    <button class="carousel-button next">❯</button>
+<div id="videoContainer">
+<div class="video-carousel">
+  <div class="video-frame">
+    <iframe id="youtubeFrame" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <video id="mp4Player" playsinline muted autoplay></video>
   </div>
+  <div class="video-controls">
+    <button id="prevBtn">⟵ Prev</button>
+    <button id="nextBtn">Next ⟶</button>
+  </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
