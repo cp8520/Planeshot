@@ -1,7 +1,6 @@
 const videoLinks = [
   'https://youtu.be/T81BAzcU7Bw',
   'https://youtu.be/w5pHiqktdvA',
-  'https://www.churchofjesuschrist.org/media/video/2022-02-0001-your-memories-can-live-forever-on-familysearch?lang=eng'
 ];
 
 const videoFrame = document.getElementById('videoFrame');
