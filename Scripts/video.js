@@ -1,31 +1,21 @@
-let player;
-const videoLinks = [
-  { videoId: 'w5pHiqktdvA' },
-  { videoId: 'abc123xyz' }
-];
+const track = document.querySelector('.carousel-track');
+const items = Array.from(track.children);
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
+
 let currentIndex = 0;
 
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('videoFrame', {
-    height: '360',
-    width: '640',
-    videoId: videoLinks[currentIndex].videoId,
-    playerVars: {
-      autoplay: 1,
-      mute: 1,
-      controls: 0,
-      modestbranding: 1,
-      rel: 0
-    },
-    events: {
-      onStateChange: onPlayerStateChange
-    }
-  });
+function updateCarousel() {
+  const itemWidth = items[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
 }
 
-function onPlayerStateChange(event) {
-  if (event.data === YT.PlayerState.ENDED) {
-    currentIndex = (currentIndex + 1) % videoLinks.length;
-    player.loadVideoById(videoLinks[currentIndex].videoId);
-  }
-}
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex === 0) ? items.length - 1 : currentIndex - 1;
+  updateCarousel();
+});
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex === items.length - 1) ? 0 : currentIndex + 1;
+  updateCarousel();
+});

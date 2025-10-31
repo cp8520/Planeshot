@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KnightIT Video Showcase</title>
-  <link rel="stylesheet" href="/styles/video.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Carousel</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Family Search</h1>
-    <p>Video Gallery</p>
-    <nav>
-      <a href="link">Video 1 Link</a>
-    </nav>
-  </header>
-  <div id="videoWrapper">
-    <iframe
-      id="videoFrame"
-      width="894"
-      height="503"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+  <div class="carousel">
+    <div class="carousel-track">
+      <div class="carousel-item">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="carousel-item">
+        <video controls>
+          <source src="video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="carousel-item">
+        <video controls>
+          <source src="video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <button class="carousel-button prev">❮</button>
+    <button class="carousel-button next">❯</button>
   </div>
-  <main>
-
-  </main>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="/scripts/video.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
