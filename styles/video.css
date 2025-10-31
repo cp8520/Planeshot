@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#videoWrapper {
+  width: 80%;
+  max-width: 960px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#videoWrapper.fade-out {
+  opacity: 0;
+}
+
+#videoPlayer {
+  width: 100%;
+  filter: grayscale(100%);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
