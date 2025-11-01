@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   const videoSources = [
-    { type: 'youtube', url: 'https://www.youtube.com/embed/w5pHiqktdvA?autoplay=1&mute=1' },
-    { type: 'mp4', url: 'videos/demo1.mp4' },
-    { type: 'youtube', url: 'https://www.youtube.com/embed/abc123xyz?autoplay=1&mute=1' },
-    { type: 'mp4', url: 'videos/demo2.mp4' }
+    { type: 'mp4', url: 'videos/YourStoreWorthRemembering.mp4' },
+    { type: 'mp4', url: 'videos/YourMemoriesCanLiveForever.mp4' },
+    { type: 'youtube', url: 'https://youtu.be/w5pHiqktdvA' },
+    { type: 'youtube', url: 'https://youtu.be/-cV-2HXWrqE' },
+    { type: 'mp4', url: 'videos/FamilySearchFamilyTree.mp4' },
+    { type: 'youtube', url: 'https://youtu.be/oli9PKdWDBQ' },
+    { type: 'youtube', url: 'https://youtu.be/We5gk04S5p8' },
+    { type: 'youtube', url: 'https://youtu.be/oli9PKdWDBQ' },
+    { type: 'mp4', url: 'videos/FamilySearchHelpResources.mp4' },
+
   ];
 
   const youtubeFrame = document.getElementById('youtubeFrame');
