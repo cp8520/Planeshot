@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const videoSources = [
-    { type: 'mp4', url: 'videos/YourStoreWorthRemembering.mp4' },
-    { type: 'mp4', url: 'videos/YourMemoriesCanLiveForever.mp4' },
+    { type: 'mp4', url: 'videos/1.mp4' },
+    { type: 'mp4', url: 'videos/2.mp4' },
     { type: 'youtube', url: 'https://www.youtube.com/embed/w5pHiqktdvA' },
     { type: 'youtube', url: 'https://www.youtube.com/embed/-cV-2HXWrqE' },
-    { type: 'mp4', url: 'videos/FamilySearchFamilyTree.mp4' },
+    { type: 'mp4', url: 'videos/3.mp4' },
     { type: 'youtube', url: 'https://www.youtube.com/embed/oli9PKdWDBQ' },
     { type: 'youtube', url: 'https://www.youtube.com/embed/We5gk04S5p8' },
-    { type: 'mp4', url: 'videos/FamilySearchHelpResources.mp4' },
+    { type: 'mp4', url: 'videos/4.mp4' },
 
   ];
 
