@@ -11,9 +11,17 @@
 <div class="video-carousel">
   <div class="video-frame">
     <iframe id="youtubeFrame" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <video id="mp4Player" autoplay playsinline controls></video> 
+<video id="mp4Player" autoplay playsinline></video>
     <button onclick="mp4Player.requestFullscreen()">Fullscreen</button>
-   </div>
+<button onclick="toggleMute()">Toggle Mute</button>
+
+<script>
+function toggleMute() {
+  const mp4Player = document.getElementById('mp4Player');
+  mp4Player.muted = !mp4Player.muted;
+}
+</script>    
+</div>
   <div class="video-controls">
     <button id="prevBtn">⟵ Prev</button>
     <button id="nextBtn">Next ⟶</button>
